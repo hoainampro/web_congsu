@@ -1,0 +1,73 @@
+.field_left {
+  float: left;
+}
+
+.field_right {
+  float: left;
+  margin-left: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+#landing-page-fields {
+  background-color: #fff;
+}
+
+#landing-page-fields .ui-sortable-handle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#landing-page-fields .inside {
+  padding: 0 12px 12px;
+  margin: 0 auto;
+  border-top: solid 1px #f0f0f0;
+}
+
+.lpt-form-wrap .lpt-form-field {
+  margin-bottom: 20px;
+}
+
+.field_wrap_galery .field_row_gallery {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+  display: inline-block;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.field_wrap_galery .field_row_gallery:last-child {
+  border: none;
+}
+
+.field_wrap_galery .field_row_gallery input {
+  width: auto;
+  min-width: 400px;
+}
+
+.field_wrap_galery .field_row_gallery .tplaction {
+  padding-top: 20px;
+}
+
+.field_wrap_galery .field_row_gallery  .button {
+  display: inline-block;
+  margin: 5px auto;
+  border: none;
+  color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.field_wrap_galery .field_row_gallery  .button.remove {
+  background-color: #ff0000;
+}
+
+.field_wrap_galery .field_row_gallery  .button.remove:hover {
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+#ltp_content-section {
+  min-height: 350px;
+}

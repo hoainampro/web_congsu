@@ -1,0 +1,114 @@
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width:992px) {}
+
+@media only screen and (max-width:768px) {
+	#hd_full .hd_content .time_work h3.title_hd{font-size:18px;}
+	#hd_full .hd_content .list_detail #list-call li a {
+	    font-size: 16px;
+	}
+	#hd_full .hd_content .list_detail{padding:90px 10px!important;}
+	#contact .bkg_contact .contact_detail .contact_input {
+    	float: none!important;
+	}
+	
+	#footer_bottom .content_text {
+	    padding-top: 42px;
+	}
+	#search {
+	    position: relative;
+	    line-height: 50px;
+	    left: 40%;
+	    display: inline-block;
+	}
+	#contact .contact_input .input_submit {
+	    margin-top: 30px;
+	}
+}
+
+@media only screen and (max-width:640px) {
+
+	#we_are .we_are_content .img_we_are {
+		padding-bottom: 30px;
+	} 
+	#hd_full .hd_content { background-color: #e6e6e6 }
+	#contact .bkg_contact .contact_detail .contact_call {
+    	padding-left: 0px;
+	}
+	#donor .owl-nav {
+	    position: relative;
+	    top: -89px;
+	}
+	#contact .bkg_contact .contact_input button[type="button"] {
+	    margin-top: 0px;
+	    padding: 6px 13px;
+	    margin-left: 0;
+	    width: 100%;
+	}
+	#advanted .title_advanted {
+	    padding: 70px 0 10px;
+	    font-size: 38px;
+	}
+	#advanted {
+	    width: 100%;
+	    height: 550px;
+	    min-height: 550px;
+	}
+
+	#contact .contact_input .input_submit {
+	  width: 100%; 
+	  margin-top: 10px;
+	}
+	#contact .bkg_contact .contact_call {
+    	text-align: left;
+	}
+
+	#contact .contact_input .input_left, #contact .contact_input .input_right {
+	    display: block;
+	    float: none;
+	    width: 100%;
+	    padding-right: 0;
+	}
+	#contact .contact_input .input_center {
+    	display: block;
+	    float: none;
+	    width: 100%;
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+	#contact .contact_input .input_right {
+     padding-left: 0;
+	}
+	#contact .contact_input textarea {
+	    width: 100%;
+	    float: none;
+	    margin-right: 30px;
+	    resize: none;
+	    padding: 15px;
+	}
+	.fanface {margin-top: 30px;}
+
+	#hd_full .hd_content .time_work {
+	    padding-left: 38px;
+	    padding-top: 0;
+	}
+	#hd_full .hd_content .list_detail {
+	    max-width: 100% !important;
+	}
+	#hd_full .hd_content .list_detail {
+    	padding: 90px 42px!important;
+	}
+	#project .project_content .project_details a img {
+    	height: 166px;
+	}
+	#news .news_details a img {
+    	height: 178px;
+	}
+}
+
+@media only screen and (max-width:480px) {
+    .col-xs-full {
+        width: 100%;
+    }
+
+}
