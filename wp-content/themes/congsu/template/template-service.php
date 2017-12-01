@@ -1,82 +1,129 @@
 <?php
 /**
- * Template Name: Page Home
+ * Template Name: Page Service
  *
  * @package flex-theme
  */
 	get_header();
 ?> 
-<!-- advanted -->
-<section id="advanted">
+<section id="introduce">
 	<div class="container">
 		<div class="row">
-			<div class="slider-top owl-carousel owl-theme">
-				<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-					<?php if( get_field('title_advanted') ): ?><h3 class="title_advanted font_utmavobold"><?php the_field('title_advanted'); ?></h3><?php endif; ?>
+			<div class="col-m-12 col-sm-6 col-xs-12">
+				<div class="introduce_detail">
+					<h3 class="title_introduce">Trang Chủ<span><a href="">Dịch Vụ</a></span></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-					<?php if( get_field('sub_advanted') ): ?>
-						<div class="sub-advanted">
-							<?php the_field('sub_advanted'); ?>
+<section id="main-content" class="main-content" role="main">
+	<div class="container service_in">
+		<div class="services_cos cos_teamplate_news">
+			<h2 class="title_service text-center"><span>Dịch Vụ</span></h2>
+		</div>
+		<div class="row mr_t40">
+			<?php get_sidebar('left'); ?> 
+				<div id="main-column" class="<?php //flex_col(); ?>" >
+					<div class="col-md-4">
+						<h3 class="title_service_in">Dịch Vụ</h3>
+						<button class="accordion adva">THIẾT KẾ – THI CÔNG NỘI THẤT</button>
+						<div class="panel">
+						  <ul>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  </ul>
 						</div>
-					<?php endif; ?>
-
-					<?php if( get_field('link_detail') ): ?>
-						<button class="button">
-							<a href=""><?php the_field('link_detail'); ?></a>	
-						</button>
-					<?php endif; ?>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- advanted -->
-<!-- services -->
-<section id="services">
-	<div class="container">
-		<div class="services_cos">
-			<h2 class="title_service text-center"><span>DỊCH VỤ CỦA CHÚNG TÔI</span></h2>
-		</div>
-		<div class="service_slider">
-			<div class="sub_service text-center">
-				<p>Trên hết, với phương châm "Cộng Sức Cùng Thắng" chúng tôi mong muốn cùng cộng tác mọi mặt với quý khách hàng để đem đến những sản phẩm và dịch vụ có chất lượng vượt trội.</p>
-			</div>
-			<div class="row">
-				<div class="details_slider">
-					<?php 
-						$args = array(
-							'post_type' => 'slider',
-							'post_status' => 'publish',
-							'posts_per_page'=> 12
-						);
-					    $my_query = null;
-					    $my_query = new WP_Query($args);
-					    if( $my_query->have_posts() ):
-
-					?>
-					<div class="owl-slider owl-carousel owl-theme">
-						<?php while ($my_query->have_posts()): $my_query->the_post(); ?>
-							
-							<div class="col-md-12 col-sm-12 col-xs-12">
-								
-									<div class="owl_items">
-										<a href="">
-										<?php the_post_thumbnail('full',array('class' =>'img-responsive' )); ?>
-										</a>
-									<h3 class="title_slider text-center"><a href=""><?php the_title(); ?></a></h3>
-									</div>
-								
-							</div>
-							
-						<?php endwhile;wp_reset_postdata(); ?>
+						<button class="accordion adva">QUẢNG CÁO LED</button>
+						<div class="panel">
+						  <ul>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  </ul>
+						</div>
+						<button class="accordion adva">HỘP ĐÈN QUẢNG CÁO</button>
+						<div class="panel">
+						  <ul>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  </ul>
+						</div>
+						<button class="accordion adva">BIỂN QUẢNG CÁO</button>
+						<div class="panel">
+						  <ul>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  </ul>
+						</div>
+						<button class="accordion adva">THIẾT KẾ – THI CÔNG NỘI THẤT</button>
+						<div class="panel">
+						  <ul>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  </ul>
+						</div>
+						<button class="accordion adva">HỘP ĐÈN QUẢNG CÁO</button>
+						<div class="panel">
+						  <ul>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  </ul>
+						</div>
+						<button class="accordion adva">HỘP ĐÈN QUẢNG CÁO</button>
+						<div class="panel">
+						  <ul>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  </ul>
+						</div>
+						<button class="accordion adva">HỘP ĐÈN QUẢNG CÁO</button>
+						<div class="panel">
+						  <ul>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  	<li><a href="">Làm biển quảng cáo mặt dựng ALU</a></li>
+						  </ul>
+						</div>
 					</div>
-					<?php endif; ?>
+					<div class="col-md-8">
+						<?php 
+						if (have_posts()) {
+							while (have_posts()) {
+								the_post();
+								get_template_part('template_part/content','page');
+							}
+						}else { 
+							get_template_part('template_part/content', 'none');
+						}  
+					?> 
+					
+							<?php 
+								$args = array(
+									'post_type' => 'page_services',
+									'post_status' => 'publish',
+									'posts_per_page'=> 3
+								);
+							    $my_query = null;
+							    $my_query = new WP_Query($args);
+							    if( $my_query->have_posts() ):
+							?>
+								<div class="old_slider owl-carousel owl-theme">
+									<?php while ($my_query->have_posts()): $my_query->the_post(); ?>
+										<div class="col-md-12 col-xs-12 col-sm-12 col_sol">
+											<a href="<?php the_permalink(); ?>">
+												<?php the_post_thumbnail('full',array('class' =>'img-responsive' )); ?>
+											</a>
+										</div>
+									<?php endwhile; wp_reset_postdata(); ?>
+								</div>
+							<?php endif; ?>
+						
+					</div>
 				</div>
-			</div>
+			<?php get_sidebar('right'); ?> 
 		</div>
 	</div>
 </section>
-<!-- services -->
 <!-- we_are -->
 <section id="we_are">
 	<div class="container">
@@ -113,118 +160,6 @@
 	</div>
 </section>
 <!-- we_are -->
-<!-- project -->
-<section id="project">
-	<div class="container">
-		<div class="services_cos">
-			<h2 class="title_service text-center"><span>Dự án nổi bật </span></h2>
-		</div>
-		<div class="container">
-			<div class="project_content">
-				<?php 
-					$args = array(
-						'post_type' => 'project',
-						'post_status' => 'publish',
-						'posts_per_page'=> 6
-					);
-					$my_query = null;
-				    $my_query = new WP_Query($args);
-				    if( $my_query->have_posts() ):
-				?>
-				<div class="owl-pro-slider owl-carousel owl-theme">
-					<?php while ($my_query->have_posts()): $my_query->the_post(); ?>
-
-						<div class="col-md-12 col-xs-12 col-sm-12">
-							<div class="project_details">
-								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-									<?php the_post_thumbnail('full',array('class' =>'img-responsive' )); ?>
-								</a>
-								<div class="project_cos">
-									<h3 class="title_project">
-										<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-										<span>
-											<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">chi tiết</a>
-										</span>
-									</h3>
-								</div>
-							</div>
-						</div>
-
-					 <?php endwhile; wp_reset_postdata(); ?> 
-				</div>	
-				<?php endif; ?>
-				
-			</div>
-		</div>
-	</div>
-</section>	
-<!-- project -->
-<!-- hd_full -->
-<section id="hd_full">
-	<div class="container">
-		<div class="hd_content">
-			<div class="row">
-				<div class="col-md-6 col-sm-6 col-xs-12">
-					<div class="time_work">
-						<h3 class="title_hd">Thời gian làm việc</h3>
-						<p>Bất cứ khi nào bạn cần, hỗ trợ 24/7, 7 ngày trong tuần</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6 col-xs-12">
-					<div class="list_detail">
-						<ul id="list-call">
-							<li><a href=""><i class="fa fa-phone"></i>0916 205 929</a></li>
-							<li><a href=""><i class="fa fa-skype"></i>congsuc.vn</a></li>
-							<li><a href=""><i class="fa fa-envelope"></i>info@congsuc.vn</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- hd_full -->
-<!-- news -->
-<section id="news">
-	<div class="container">
-
-		<div class="services_cos">
-			<h2 class="title_service text-center"><span>Tin Tức</span></h2>
-		</div>
-
-		<div class="row new_cos">
-			<?php 
-				$args = array(
-					'post_type' => 'news',
-					'post_status' => 'publish',
-					'posts_per_page'=> 6
-				);
-			    $my_query = null;
-			    $my_query = new WP_Query($args);
-			    if( $my_query->have_posts() ):
-			?>
-				<div class="news_slider slider owl-carousel owl-theme">
-					<?php while ($my_query->have_posts()): $my_query->the_post(); ?>
-
-						<div class="col-md-12 col-sm-12 col-xs-12">
-							<div class="news_details">
-								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-									<?php the_post_thumbnail('full',array('class' =>'img-responsive' )); ?>
-								</a>
-								<h3 class="title_slider"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-								<p><?php echo substr(get_the_excerpt(), 0,200)."…"; ?></p> 
-							</div>
-						</div>
-				
-					<?php endwhile; wp_reset_postdata(); ?>
-			
-				</div>
-			<?php endif; ?>
-		</div>
-
-	</div>
-</section>
-<!-- news -->
 <!-- block_tail -->
 <section id="block_tail">
 	<div class="container">
@@ -345,7 +280,7 @@
 </section>
 <!-- map -->
 <!-- socail_company -->
-<section id="socail_company">
+<section id="socail_company" class="bg_color_socials">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-sm-6 col-xs-12">
@@ -421,24 +356,4 @@
 </section>
 <!-- socail_company -->
 
-<section id="main-content" class="main-content" role="main">
-	<div class="container">
-		<div class="row">
-			<?php get_sidebar('left'); ?> 
-				<div id="main-column" class="<?php flex_col(); ?>" >
-					<?php 
-						if (have_posts()) {
-							while (have_posts()) {
-								the_post();
-								get_template_part('template_part/content','page');
-							}
-						}else { 
-							get_template_part('template_part/content', 'none');
-						}  
-					?> 
-				</div>
-			<?php get_sidebar('right'); ?> 
-		</div>
-	</div>
-</section>
 <?php get_footer(); ?> 

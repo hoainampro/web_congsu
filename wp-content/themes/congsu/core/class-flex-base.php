@@ -41,6 +41,10 @@ class Fx_Base
         /*js_ui*/
          wp_enqueue_style('js_ui-css', THEME_URL_LIBS.'js_ui/jquery-ui.css',array(),THEME_VER); 
          wp_enqueue_script('js_ui-js', THEME_URL_LIBS . 'js_ui/jquery-ui.js', array(),THEME_VER); 
+         
+         /*masonry*/
+         wp_enqueue_script('masonry-js', THEME_URL_LIBS . 'masonry/masonry.pkgd.min.js', array(),THEME_VER); 
+         
         /*Font*/
         wp_enqueue_style('fontawesome', THEME_URL_LIBS.'font-awesome/css/font-awesome.min.css',array(),'4.7.0'); 
 
@@ -48,6 +52,7 @@ class Fx_Base
         //wp_enqueue_style('theme-style', THEME_URL.'/style.css');
         wp_enqueue_script('fl-script', THEME_URL_ASSETS.'js/main.js', array(),false,true);
         wp_enqueue_style('fl-css', THEME_URL_ASSETS.'css/main.css', array(),THEME_VER); 
+        wp_enqueue_style('fl-css-animation', THEME_URL_ASSETS.'css/animation_cococ.css', array(),THEME_VER); 
         wp_enqueue_style('fl-cres', THEME_URL_ASSETS.'css/responsive.css', array(),THEME_VER); 
     }
 

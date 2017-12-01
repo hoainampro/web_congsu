@@ -6,6 +6,7 @@
 	#hd_full .hd_content .time_work h3.title_hd{font-size:18px;}
 	#hd_full .hd_content .list_detail #list-call li a {
 	    font-size: 16px;
+	    color: #565656;
 	}
 	#hd_full .hd_content .list_detail{padding:90px 10px!important;}
 	#contact .bkg_contact .contact_detail .contact_input {
@@ -60,7 +61,7 @@
 	  margin-top: 10px;
 	}
 	#contact .bkg_contact .contact_call {
-    	text-align: left;
+    	text-align: center;
 	}
 
 	#contact .contact_input .input_left, #contact .contact_input .input_right {
@@ -96,7 +97,7 @@
 	    max-width: 100% !important;
 	}
 	#hd_full .hd_content .list_detail {
-    	padding: 90px 42px!important;
+    	padding: 30px 42px!important;
 	}
 	#project .project_content .project_details a img {
     	height: 166px;
@@ -104,11 +105,23 @@
 	#news .news_details a img {
     	height: 178px;
 	}
+
+	#hd_full .hd_content {
+	    
+	     background-image: none;
+	    
+	}
 }
 
 @media only screen and (max-width:480px) {
     .col-xs-full {
         width: 100%;
     }
+    #search {
+	    position: relative;
+	    line-height: 50px;
+	    left: 24%;
+	    display: inline-block;
+	}
 
 }

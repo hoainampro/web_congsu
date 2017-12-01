@@ -177,6 +177,13 @@ jQuery(document).ready(function($) {
         if ($(this).scrollTop() > 100) { $('#wrap-back-to-top').css('display', 'block'); } else { $('#wrap-back-to-top').css('display', 'none'); }
     });
     $('#wrap-back-to-top').click(function() { $("html, body").animate({ scrollTop: 0 }, 1000); });
+
+    $('.grid').masonry({
+	    columnWidth: '.grid-sizer',
+		gutter: '.gutter-sizer',
+		itemSelector: '.grid-item',
+		percentPosition: true
+	})
 });
 
 
